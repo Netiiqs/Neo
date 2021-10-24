@@ -11,14 +11,13 @@ module.exports = {
         const msg = await channel.messages.fetch('901582211537588295');
 
         const page1 = new discord.MessageEmbed()
-            .setTitle('Bienvenue sur le !help')
+            .setTitle('Bienvenue sur commande d\'aide')
             .setDescription(`
             Vous pouvez naviguer de pages en pages avec les réactions sous le message.
             Le !help reste 1 minute, après cela il se supprimera.
 
-            La page n°2 est la liste des commandes.
-            La page n°3 est la liste des évenements.
-
+            La page n°2 liste les commandes.
+            La page n°3 liste les évenements.
             `);
 
         const page2 = new discord.MessageEmbed()
