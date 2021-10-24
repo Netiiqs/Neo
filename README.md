@@ -16,7 +16,7 @@ Bot Discord dédié au serveur communautaire DreamFire.
 
 ✘ !reaction → Envoie un embed comportant des réactions, un event donne des rôles avec ces réactions. Uniquement pour les administateurs.
 
-✘ !ping → Affiche le ping du BOT, rien de bien compliqué.
+✘ !ping → Affiche le ping du BOT, il envoie un message, le supprime puis calcule le temps entre les 2 actions.
 
 # Events
 
