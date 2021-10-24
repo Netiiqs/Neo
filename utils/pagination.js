@@ -57,6 +57,6 @@ class Pagination {
 
         return this.curPage;
     };
-};
+}
 
 module.exports = Pagination;
