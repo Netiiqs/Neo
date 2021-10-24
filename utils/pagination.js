@@ -14,9 +14,9 @@ class Pagination {
     }
 
     async send() {
-        if (!this.msg && !msg.channel) throw new Error('Channel is inaccessible.');
-        if (!this.pages) throw new Error('Pages are not given.');
-        if (this.emojiList.length !== 2) throw new Error('Need two emojis.');
+        if (!this.msg && !msg.channel) throw new Error('Channel inaccessible');
+        if (!this.pages) throw new Error('Problème de pages');
+        if (this.emojiList.length !== 2) throw new Error('Besoin de 2 emojis');
 
         this.curPage = await this.msg.channel.send(this.pages[this.page].setFooter(`Page ${this.page + 1} / ${this.pages.length}`));
 
