@@ -22,11 +22,7 @@ for (const file of eventsFiles) {
 	} else {
 		client.on(event.name, (...args) => event.execute(...args, client, Discord));
 	}
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> 24b358d9ca0519333f0b8fecf708375f9580b256
 
 client.login(config.token)
 	.then(console.log(`# Bot redémarré manuellement.`));
