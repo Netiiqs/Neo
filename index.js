@@ -22,9 +22,6 @@ for (const file of eventsFiles) {
 	} else {
 		client.on(event.name, (...args) => event.execute(...args, client, Discord));
 	}
-
-	console.log("registred event : " + event.name);
-
 }
 
 client.login(config.token)
