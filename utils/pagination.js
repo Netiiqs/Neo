@@ -11,7 +11,7 @@ class Pagination {
         this.page = 0;
         this.curPage = 1;
         this.reactionCollector = null;
-    }
+    };
 
     async send() {
         if (!this.msg && !msg.channel) throw new Error('Channel inaccessible');
@@ -22,7 +22,7 @@ class Pagination {
 
         for (let emoji of this.emojiList) {
             await this.curPage.react(emoji);
-        }
+        };
 
         this.reactionCollector = this.curPage.createReactionCollector(
             (reaction, user) => this.emojiList.includes(reaction.emoji.name) && !user.bot,
@@ -40,7 +40,7 @@ class Pagination {
                     break;
                 default:
                     break;
-            }
+            };
             this.curPage.edit(this.pages[this.page].setFooter(`Page ${this.page + 1} / ${this.pages.length}`));
         });
 
@@ -52,11 +52,11 @@ class Pagination {
                     .setDescription('Minute écoulée, refaites !help');
             
                 this.curPage.edit(modifiedEmbed);
-            }
+            };
         });
 
         return this.curPage;
-    }
-}
+    };
+};
 
 module.exports = Pagination;
