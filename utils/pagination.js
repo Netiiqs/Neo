@@ -2,8 +2,9 @@ const Discord = require('discord.js');
 
 class Pagination {
 
-    constructor(msg, pages, emojiList = ['⏪', '⏩'], timeout = 120000) {
+    constructor(msg, channel, pages, emojiList = ['⏪', '⏩'], timeout = 120000) {
         this.msg = msg;
+        this.channel = channel;
         this.pages = pages;
         this.emojiList = emojiList;
         this.timeout = timeout;
@@ -14,11 +15,11 @@ class Pagination {
     };
 
     async send() {
-        if (!this.msg && !msg.channel) throw new Error('Channel inaccessible');
+        if (!this.msg && !this.channel) throw new Error('Channel inaccessible');
         if (!this.pages) throw new Error('Problème de pages');
         if (this.emojiList.length !== 2) throw new Error('Besoin de 2 emojis');
 
-        this.curPage = await this.msg.channel.send(this.pages[this.page].setFooter(`Page ${this.page + 1} / ${this.pages.length}`));
+        this.curPage = await this.channel.send(this.pages[this.page].setFooter(`Page ${this.page + 1} / ${this.pages.length}`));
 
         for (let emoji of this.emojiList) {
             await this.curPage.react(emoji);
