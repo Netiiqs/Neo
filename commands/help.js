@@ -6,9 +6,7 @@ module.exports = {
     aliases: ['aide', 'commandes', 'commande'],
     permissions: [],
     async execute(message, args, client, discord) {
-
         const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
-        const msg = await channel.messages.fetch('902231012627591208');
 
         const page1 = new discord.MessageEmbed()
             .setTitle('Bienvenue sur commande d\'aide')
@@ -71,9 +69,7 @@ module.exports = {
         ];
 
         const emoji = ["⏪", "⏩"];
-
-        new Pagination(message, pages, emoji, 60000).send();
-
-        msg.reactions.resolve(...emoji).users.remove(...emoji);
+        
+        new Pagination(message, channel, pages, emoji, 60000).send();
     },
 };
