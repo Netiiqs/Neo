@@ -8,7 +8,7 @@ module.exports = {
     async execute(message, args, client, discord) {
 
         const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
-        const msg = await channel.messages.fetch('');
+        const msg = await channel.messages.fetch('902231012627591208');
 
         const page1 = new discord.MessageEmbed()
             .setTitle('Bienvenue sur commande d\'aide')
