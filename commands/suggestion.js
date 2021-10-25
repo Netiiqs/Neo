@@ -6,8 +6,8 @@ module.exports = {
     aliases: ['suggest', 'suggestion', 'suggestions'],
     permissions: [],
     execute(message, args, client, discord) {
+
         const channel = message.guild.channels.cache.find(c => c.name === '💡┃𝙎𝙪𝙜𝙜𝙚𝙨𝙩𝙞𝙤𝙣𝙨');
-        if(!channel) return message.channel.send('Le channel suggestions n\'existe pas');
 
         let laDate = new Date();
         
