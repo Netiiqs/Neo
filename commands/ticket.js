@@ -4,8 +4,8 @@ module.exports = {
     permissions: [],
     description: 'Ouvrez un ticket!',
     async execute(message, args, cmd, client, discord){
-        const channel = await message.guild.channels.create(`❗┃ticket: ${message.author.username}`);
 
+        const channel = await message.guild.channels.create(`❗┃ticket: ${message.author.username}`);
         channel.setParent('877234668833996861');
 
         channel.updateOverwrite(message.guild.id, {
@@ -25,7 +25,7 @@ module.exports = {
         } catch (err) {
             channel.send('problème avec les émojis');
             throw err;
-        }
+        };
 
         const collector = reactionMessage.createReactionCollector((reaction, user) => 
           message.guild.members.cache.find((members) => members.id === user.id).hasPermission('ADMINISTRATOR'),
@@ -42,7 +42,7 @@ module.exports = {
                     channel.send('Nous espérons que votre problème a été résolu, bon jeu !')
                     setTimeout(() => channel.delete(), 5000)
                     break;
-            }
+            };
         });
     
         message.channel.send('Un channel a été créé, vous y trouverez de l\'aide !')
