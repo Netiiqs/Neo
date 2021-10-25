@@ -6,11 +6,10 @@ module.exports = {
     description: 'envoie un gif',
     aliases: ['gifs', 'meme'],
     permissions: [],
-    async execute (msg, args, client, discord) {
-
+    async execute (message, args, client, discord) {
         const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
 
-        const tokens = msg.content.split(" ");
+        const tokens = message.content.split(" ");
 
         const keywords = tokens.slice(1, tokens.length).join(" ");
 
@@ -22,5 +21,5 @@ module.exports = {
         const index = Math.floor(Math.random() * result.results.length);
 
         channel.send(result.results[index].url);
-        }
-    };
+    },
+};
