@@ -8,6 +8,8 @@ module.exports = {
     permissions: [],
     async execute (msg, args, client, discord) {
 
+        const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+
         const tokens = msg.content.split(" ");
 
         const keywords = tokens.slice(1, tokens.length).join(" ");
@@ -19,6 +21,6 @@ module.exports = {
 
         const index = Math.floor(Math.random() * result.results.length);
 
-        msg.channel.send(result.results[index].url);
+        channel.send(result.results[index].url);
         }
     };

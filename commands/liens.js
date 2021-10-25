@@ -4,6 +4,8 @@ module.exports = {
     aliases: ['lien', 'forum', 'vip', 'sourceban', 'teamspeak', 'ts'],
     execute: (message, args, client, Discord) => {
 
+      const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+
         const embed = new Discord.MessageEmbed()
           .setColor('2F7FDE')
           .setAuthor(client.user.username, client.user.avatarURL({ dynamic : true}))
@@ -28,6 +30,6 @@ module.exports = {
             )
           .setFooter(`✘ Demandé par ` + message.author.username, `${message.author.avatarURL({ dynamic: true})}`);
         
-        message.channel.send(embed);
+        channel.send(embed);
     }
 };

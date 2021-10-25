@@ -2,9 +2,11 @@ module.exports = {
     name: 'ping',
     aliases: ['ms', 'latency'],
     execute: (message, args, client, Discord) => {
-        message.channel.send('Loading ...').then(async (msg) => {
+
+        const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+        channel.send('Loading ...').then(async (msg) => {
             msg.delete();
-            message.channel.send(`J'ai ${msg.createdTimestamp - message.createdTimestamp}ms.`);
+            channel.send(`J'ai ${msg.createdTimestamp - message.createdTimestamp}ms.`);
         });
     },
 };
