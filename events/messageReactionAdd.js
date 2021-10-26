@@ -19,7 +19,7 @@ module.exports = {
 				let member = reaction.message.guild.members.cache.get(user.id);
 
 				if (member.roles.cache.some(roleFind => rolesList.includes(roleFind.id)) && rolesList.includes(role[0])) {
-					member.send("**ATTENTION** • Tu dois choisir soit Guardien, soit Prisonnier. Pas les deux !");
+					member.send("**ATTENTION** • Tu dois choisir soit Gardien, soit Prisonnier. Pas les deux !");
                     console.log('DM envoyé à : ', user.tag);
 				} else {
 					await member.roles.add(role[0]);
