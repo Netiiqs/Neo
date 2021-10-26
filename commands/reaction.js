@@ -18,13 +18,13 @@ module.exports = {
             .setTitle(`Réagissez aux émojis ci-dessous pour avoir vos rôles !`)
             .setDescription(`__***Explication des rôles :***__
 
-            ✘ **Guardien / Prisonnier** → Choisissez l'un des 2 rôles afin de vous 
-            différencier un peu, ils ont les mêmes permissions !
+            ✘ **Gardien / Prisonnier** → Choisissez l'un des 2 rôles afin d'avoir 
+            accès à l'entièreté du Discord, ils ont les mêmes permissions !
 
             ✘ **Notif Ba-Jail** → Quand vous voulez jouer au ba-jail, vous pouvez 
             ping le rôle dans le channel adéquat afin de ramener des joueurs.
 
-            <:Guardien:899022076122382346> → <@&896352132108779531>
+            <:Gardien:899022076122382346> → <@&896352132108779531>
             <:Prisonnier:899022011580440596> → <@&896352224626769971>
             <:Notification:899011065038376981> → <@&896040564414365726>
             `);
