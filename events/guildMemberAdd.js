@@ -21,10 +21,10 @@ module.exports = {
         .setDescription(`
         ★── ✨ 𝐵𝑖𝑒𝑛𝑣𝑒𝑛𝑢𝑒 𝑠𝑢𝑟 𝑙𝑒 𝑠𝑒𝑟𝑣𝑒𝑢𝑟 𝑐𝑜𝑚𝑚𝑢𝑛𝑎𝑢𝑡𝑎𝑖𝑟𝑒 𝐷𝑟𝑒𝑎𝑚𝐹𝑖𝑟𝑒 !✨ ──★
 
+        • Fait \`!help\` pour voir les commandes disponibles dans #🤖┃𝘽𝙤𝙩
         • Tu peux lire les règles du serveur dans le channel #⛔┃𝙍𝙚𝙜𝙡𝙚𝙨
         • Tu peux voir les évenements dans le channel #📣┃𝘼𝙣𝙣𝙤𝙣𝙘𝙚𝙨
-        • Les commandes du BOT sont dans le channel #🤖┃𝙗𝙤𝙩-𝙝𝙚𝙡𝙥
-        • Tous les liens sont dans le channel #📋┃𝙇𝙞𝙚𝙣𝙨
+        • Prend tes rôles dans le channel #🎭┃𝙍𝙤𝙡𝙚𝙨
         
         ★───────────── ✨ 𝐴𝑚𝑢𝑠𝑒𝑧-𝑣𝑜𝑢𝑠 𝑏𝑖𝑒𝑛 ! ✨ ─────────────★`)
         .setFooter('✘')
