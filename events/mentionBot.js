@@ -1,7 +1,8 @@
 module.exports = {
-    name: 'message',
+    name: 'mentionBot',
     once: false,
-    execute(message, client, Discord){
+    execute(message, client, Discord) 
+    {
         const rm = `${message.author.username}`
         
         const reponseMention = [`Retourne dans ta jail ${rm}`, `A l'ouverture des jails, tu vas arrêter de me ping ${rm}`, 
