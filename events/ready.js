@@ -21,31 +21,23 @@ async function taskStatus(client) {
             statusParams = { type : 'WATCHING'};
 			break;
 		case 1:
-			statusMessage = 'Yevent 2021';
-            statusParams = { type : 'COMPETING'};
-			break;
-		case 2:
 			statusMessage = 'vos idées ✨';
             statusParams = { type : 'LISTENING'};
 			break;
-		case 3:
+		case 2:
 			statusMessage = 'vos suggestions 👀';
             statusParams = { type : 'WATCHING'};
 			break;
-		case 4:
+		case 3:
 			statusMessage = 'jeu d\'acteur en Français';
             statusParams = { type : 'PLAYING'};
 			break;
-		case 5:
+		case 4:
 			statusMessage = 'les ordres 👮‍♂️';
             statusParams = { type : 'LISTENING'};
 			break;
-		case 6:
-			statusMessage = 'se déguiser 🎃';
-            statusParams = { type : 'PLAYING'};
-			break;
-		case 7:
-			statusMessage = 'Event Halloween';
+		case 5:
+			statusMessage = 'Event de Noël';
             statusParams = { type : 'COMPETING'};
 	};
     
