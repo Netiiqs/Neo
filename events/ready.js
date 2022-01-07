@@ -29,16 +29,16 @@ async function taskStatus(client) {
             statusParams = { type : 'WATCHING'};
 			break;
 		case 3:
-			statusMessage = 'jeu d\'acteur en Français';
-            statusParams = { type : 'PLAYING'};
-			break;
-		case 4:
 			statusMessage = 'les ordres 👮‍♂️';
             statusParams = { type : 'LISTENING'};
 			break;
+		case 4:
+			statusMessage = 'Le CS:S';
+            statusParams = { type : 'WATCHING'};
+			break;
 		case 5:
-			statusMessage = 'Event de Noël';
-            statusParams = { type : 'COMPETING'};
+			statusMessage = 'Le CS:GO';
+			statusParams = { type : 'WATCHING'};
 	};
     
 	client.user.setActivity(statusMessage, statusParams);
