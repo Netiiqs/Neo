@@ -33,11 +33,11 @@ async function taskStatus(client) {
             statusParams = { type : 'LISTENING'};
 			break;
 		case 4:
-			statusMessage = 'Le CS:S';
+			statusMessage = 'le CS:S';
             statusParams = { type : 'WATCHING'};
 			break;
 		case 5:
-			statusMessage = 'Le CS:GO';
+			statusMessage = 'le CS:GO';
 			statusParams = { type : 'WATCHING'};
 	};
     
