@@ -4,7 +4,7 @@ module.exports = {
     name: 'messageReactionRemove',
     once: false,
     aliases: [],
-    description: "oh ta gueule",
+    description: "Retire un rôle si on re-appuie sur l'emoji correspondant",
     async execute(reaction, user, client, Discord) {
         if (reaction.message.partial) await reaction.message.fetch();
 		if (reaction.partial) await reaction.fetch();
