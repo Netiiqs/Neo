@@ -4,7 +4,7 @@ module.exports = {
     aliases: ['lien', 'forum', 'vip', 'sourceban', 'teamspeak', 'ts'],
     execute: (message, args, client, Discord) => {
 
-      const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+      const channel = message.guild.channels.cache.find(c => c.name === '🔧┃𝑩𝒐𝒕');
 
         const embed = new Discord.MessageEmbed()
           .setColor('2F7FDE')
