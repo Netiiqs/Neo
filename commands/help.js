@@ -6,7 +6,7 @@ module.exports = {
     aliases: ['aide', 'commandes', 'commande'],
     permissions: [],
     async execute(message, args, client, discord) {
-        const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+        const channel = message.guild.channels.cache.find(c => c.name === '🔧┃𝑩𝒐𝒕');
 
         const page1 = new discord.MessageEmbed()
             .setTitle('Bienvenue sur commande d\'aide')
