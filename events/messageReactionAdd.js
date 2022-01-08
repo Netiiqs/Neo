@@ -4,7 +4,7 @@ module.exports = {
     name: 'messageReactionAdd',
     once: false,
     aliases: [],
-    description: "oh ta gueule",
+    description: "Ajoute un rôle quand on réagit",
     async execute(reaction, user, client, Discord) {
 
         if (reaction.message.partial) await reaction.message.fetch();
@@ -15,15 +15,11 @@ module.exports = {
 
         for (let role of roles) {
             if (reaction.emoji.id === role[1]) {
-				let rolesList = ['896352224626769971', '896352132108779531'];			
+				let rolesList = ['929124211799261244', '929130745040097291'];			
 				let member = reaction.message.guild.members.cache.get(user.id);
 
-				if (member.roles.cache.some(roleFind => rolesList.includes(roleFind.id)) && rolesList.includes(role[0])) {
-					member.send("**ATTENTION** • Tu dois choisir soit Gardien, soit Prisonnier. Pas les deux !");
-                    console.log('DM envoyé à : ', user.tag);
-				} else {
-					await member.roles.add(role[0]);
-				};
+				member.roles.add(role[0]);
+
 			};
         };
     }
