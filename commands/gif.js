@@ -7,7 +7,7 @@ module.exports = {
     aliases: ['gifs', 'meme'],
     permissions: [],
     async execute (message, args, client, discord) {
-        const channel = message.guild.channels.cache.find(c => c.name === '🤖┃𝘽𝙤𝙩');
+        const channel = message.guild.channels.cache.find(c => c.name === '🔧┃𝑩𝒐𝒕');
 
         const tokens = message.content.split(" ");
 
