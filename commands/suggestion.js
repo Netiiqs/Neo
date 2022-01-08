@@ -7,7 +7,7 @@ module.exports = {
     permissions: [],
     execute(message, args, client, discord) {
 
-        const channel = message.guild.channels.cache.find(c => c.name === '💡┃𝙎𝙪𝙜𝙜𝙚𝙨𝙩𝙞𝙤𝙣𝙨');
+        const channel = message.guild.channels.cache.find(c => c.name === '💡┃𝑺𝒖𝒈𝒈𝒆𝒔𝒕𝒊𝒐𝒏𝒔');
 
         let laDate = new Date();
         
