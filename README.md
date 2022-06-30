@@ -22,7 +22,7 @@ Bot Discord dédié au serveur communautaire DreamFire.
 
 ✘ Message de bienvenue → Envoie un message de bienvenue aux nouveaux arrivants sur le Discord. Le titre de l'embed est aléatoire.
             
-✘ Prise de rôles → Un embed comportant des réactions, chaque réaction nous accorde un rôle, cependant il est impossible de prendre le grade Prisonnier ET le grade  Gardien. Il faut faire un choix. 
+✘ Prise de rôles → Un embed comportant des réactions, chaque réaction nous accorde un rôle, qui nous donne accès à plusieurs sections du discord.
             
 ✘ Mention du BOT → Lorsqu'un utilisateur ping le BOT, celui-ci lui répond.
 
